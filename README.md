@@ -64,9 +64,11 @@ You need to install the XAMPP first from the chrome browser,
 then go to cd:C/XAMPP/htdocs
 create a projects folder here and copy this whole setup there in the TO-DO-LIST folder (you need to create this manually)
 then open the folder in the vscode 
-Set up your .env file
 and in the terminal type:
+composer install
+php artisan key:generate
 php artisan migrate
 php artisan serve
-Now you project setup is complete and you see it on the localhost;
+Now you project setup is complete and you see it on the localhost:http://127.0.0.1:8000
+And if you go the http://localhost/phpmyadmin/ then there will be a database created named laravel in which there wil be a table named myuser which contains all the detail of the registered users.
 
